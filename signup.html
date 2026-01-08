@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KGF Clothing Brand — Registration</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#1f2937; 
+      --muted:#6b7280;
+      --primary:#0ea5a4;
+      --danger:#ef4444;
+      --input-border:#e6e9ef;
+      --radius:12px;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg,var(--bg),#eef3f9);
+      color:var(--accent);
+      padding:24px;
+    }
+
+    .container{
+      width:100%;
+      max-width:920px;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+    }
+
+    /* Left promo panel */
+    .panel{
+      padding:28px;
+      background:transparent;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#111827,#0ea5a4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:20px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.12);
+    }
+    .brand h1{font-size:20px;margin:0}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+
+    .promo{
+      background:linear-gradient(180deg, rgba(14,165,164,0.08), rgba(14,165,164,0.03));
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.04);
+      color:var(--muted);
+      line-height:1.5;
+      font-size:14px;
+    }
+
+    /* Card/form */
+    .card{
+      background:var(--card);
+      padding:26px;
+      border-radius:var(--radius);
+      box-shadow:0 10px 30px rgba(2,6,23,0.06);
+      border:1px solid rgba(15,23,42,0.03);
+    }
+
+    form h2{
+      margin:0 0 10px 0;
+      font-size:20px;
+    }
+    form p.lead{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+      margin-bottom:12px;
+    }
+
+    label{
+      display:block;
+      font-size:12px;
+      margin-bottom:6px;
+      color:#374151;
+      font-weight:600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"]{
+      width:100%;
+      padding:12px 14px;
+      border-radius:10px;
+      border:1px solid var(--input-border);
+      background:#fff;
+      outline:none;
+      font-size:14px;
+      transition:box-shadow .15s, border-color .15s;
+    }
+    input:focus{
+      box-shadow:0 6px 20px rgba(14,165,164,0.08);
+      border-color:var(--primary);
+    }
+
+    .field{
+      margin-bottom:12px;
+    }
+
+    .full { grid-column: 1 / -1; }
+
+    .small{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:6px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      border:0;
+      cursor:pointer;
+      font-weight:700;
+      background:linear-gradient(90deg,var(--primary),#059669);
+      color:white;
+      font-size:15px;
+      box-shadow:0 8px 24px rgba(5,150,105,0.12);
+      width:100%;
+    }
+
+    .btn:disabled{
+      opacity:0.6;
+      cursor:not-allowed;
+    }
+
+    .muted-link{
+      text-align:center;
+      margin-top:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .error{
+      color:var(--danger);
+      font-size:13px;
+      margin-top:8px;
+      display:none;
+    }
+
+    .pw-row{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .toggle-pw{
+      background:transparent;
+      border:0;
+      cursor:pointer;
+      font-size:13px;
+      color:var(--muted);
+      padding:6px 8px;
+    }
+
+    /* Responsive */
+    @media (max-width:920px){
+      .container{ grid-template-columns: 1fr; }
+      .panel{ order:2 }
+      .card{ order:1 }
+    }
+  </style>
+</head>
+<body>
+
+   <div>
+    <div class="nav">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/023/654/784/small_2x/golden-logo-template-free-png.png"
+        alt="KGF CLOTHING" />
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="about us.html">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+
+      <div class="search">
+        <input type="search" placeholder="Search here" />
+
+        <button>Submit</button>
+      </div>
+
+      <div class="btn_section">
+        <button>
+          <a href="login.html">Login</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people"
+            viewBox="0 0 16 16">
+            <path
+              d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+          </svg>
+        </button>
+        <button>
+          <a href="signup.html"> Sign Up </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  <div class="container">
+    <div class="panel">
+      <div class="brand">
+        <div class="logo">KGF</div>
+        <div>
+          <h1>KGF Clothing</h1>
+          <p>Premium streetwear — Registration</p>
+        </div>
+      </div>
+
+      <div class="promo">
+        <strong>Welcome!</strong>
+        <p style="margin-top:8px">Register on KGF Brand and be the first to know about new collections, offers and exclusive drops. Enter correct details while creating account..</p>
+      </div>
+    </div>
+
+    <div class="card" aria-labelledby="reg-title">
+      <form id="regForm" autocomplete="on" novalidate>
+        <h2 id="reg-title">Create your account</h2>
+        <p class="lead">Just a few basic details — you're set!</p>
+
+        <div class="grid">
+          <div class="field">
+            <label for="fname">Name</label>
+            <input id="fname" name="fname" type="text" required placeholder="First name" />
+          </div>
+
+          <div class="field">
+            <label for="lname">Surname</label>
+            <input id="lname" name="lname" type="text" required placeholder="Last name" />
+          </div>
+
+          <div class="field full">
+            <label for="phone">Number</label>
+            <input id="phone" name="phone" type="tel" required placeholder="Phone number (e.g. 9876543210)"
+                   pattern="[0-9]{10}" />
+            <div class="small">10-digit number required (numbers only).</div>
+          </div>
+
+          <div class="field full">
+            <label for="email">Email ID</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="pw-row">
+              <input id="password" name="password" type="password" required minlength="6" placeholder="Create password" />
+              <button type="button" class="toggle-pw" data-target="password">Show</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="confirm">Confirm Password</label>
+            <div class="pw-row">
+              <input id="confirm" name="confirm" type="password" required minlength="6" placeholder="Re-enter password" />
+              <button type="button" class="toggle-pw" data-target="confirm">Show</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field full">
+          <button id="createBtn" class="btn" type="submit">Create Account</button>
+          <div id="errMsg" class="error">Passwords do not match or invalid details.</div>
+        </div>
+
+        <div class="muted-link">
+          Already have an account? <a href="#" style="color:var(--primary); text-decoration:none;">Sign in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Simple client-side validation & password toggle
+    (function(){
+      const form = document.getElementById('regForm');
+      const pwd = document.getElementById('password');
+      const conf = document.getElementById('confirm');
+      const err = document.getElementById('errMsg');
+      const btns = document.querySelectorAll('.toggle-pw');
+
+      btns.forEach(b=>{
+        b.addEventListener('click', () => {
+          const tgt = document.getElementById(b.dataset.target);
+          if (!tgt) return;
+          if (tgt.type === 'password'){ tgt.type = 'text'; b.textContent = 'Hide'; }
+          else { tgt.type = 'password'; b.textContent = 'Show'; }
+        });
+      });
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        err.style.display = 'none';
+
+        // Basic HTML5 validation
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        // Phone pattern check (10 digits)
+        const phone = document.getElementById('phone').value.trim();
+        if (!/^[0-9]{10}$/.test(phone)) {
+          err.textContent = 'Please enter a valid 10-digit phone number.';
+          err.style.display = 'block';
+          return;
+        }
+
+        // Password match
+        if (pwd.value !== conf.value) {
+          err.textContent = 'Passwords do not match.';
+          err.style.display = 'block';
+          return;
+        }
+
+        // Password length
+        if (pwd.value.length < 6) {
+          err.textContent = 'Password must be at least 6 characters.';
+          err.style.display = 'block';
+          return;
+        }
+
+        // If you want to send the data to server, use fetch/ajax here.
+        // For demo we'll just show a success and reset:
+        alert('Account created successfully (demo).\\n Submit your details to Register here.');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
+

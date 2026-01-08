@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.nav img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  width: 1425px;
+  height: 100px;
+  background-color: rgb(44, 24, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav ul li a {
+  padding: 10px 20px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.nav ul li a:hover {
+  background-color: white;
+  color: black;
+  transition: 3s;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-container {
+  position: relative;
+}
+
+#search {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  /* Hide by default */
+  z-index: 1000;
+}
+
+#suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.search {
+  margin-right: 100px;
+}
+
+.search input {
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid;
+  background-color: transparent;
+  color: white;
+}
+
+input:hover {
+  background-color: white;
+  color: black;
+}
+
+.search button {
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid;
+  background-color: transparent;
+  color: white;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(7, 165, 131, 0.438);
+  color: #ffffff;
+}
+
+.info {
+  align-items: center;
+  text-align: center;
+  background: Linear-gradient(135deg, #d1100a, #a1f4ff);
+  color: white;
+  padding: 20px;
+
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.info_button {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 2s;
+  color: #00bcd4;
+}
+
+.info_button:hover {
+  background-color: black;
+  ;
+}
+
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  font-weight: bold;
+  height: 30px;
+  display: inline-flex;
+  transition: 3s;
+
+}
+
+.hero {
+  background-image: url('https://niceorg.in/wp-content/uploads/2022/09/Brand-Name-1024x683.jpeg'); /* change to your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #111;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}

@@ -1,0 +1,240 @@
+
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+ /* background: url('https://i.imgur.com/Vv4z0PE.jpg') no-repeat center center/cover;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  width: 1430px;
+  height: 100px;
+  background-color: rgb(44, 24, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav ul li a {
+  padding: 10px 20px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.nav ul li a:hover {
+  background-color: white;
+  color: black;
+  transition: 3s;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-container {
+  position: relative;
+}
+
+#search {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  /* Hide by default */
+  z-index: 1000;
+}
+
+#suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.search {
+  margin-right: 100px;
+}
+
+.search input {
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid;
+  background-color: transparent;
+  color: white;
+}
+
+input:hover {
+  background-color: white;
+  color: black;
+}
+
+.search button {
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid;
+  background-color: transparent;
+  color: white;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(7, 165, 131, 0.438);
+  color: #ffffff;
+}
+
+.info {
+  align-items: center;
+  text-align: center;
+  background: Linear-gradient(135deg, #d1100a, #a1f4ff);
+  color: white;
+  padding: 20px;
+
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.info_button {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 2s;
+  color: #00bcd4;
+}
+
+.info_button:hover {
+  background-color: black;
+  ;
+}
+
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  font-weight: bold;
+  height: 30px;
+  display: inline-flex;
+  transition: 3s;
+
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url('');
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  color:beige;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+}
+
+
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: gold;
+  font-size: 16px;
+}
+
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: gold;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-container button:hover {
+  background-color: #ffd700;
+}
